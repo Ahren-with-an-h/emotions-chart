@@ -5,15 +5,18 @@ body {
 
 h1 {
   text-align: center;
+  /* font-size: 2em; */
 }
 
 #main {
   display: flex;
   justify-content: space-around;
+  margin: 0px 20px;
 }
 
 #main h2 {
   text-align: center;
+
 }
 
 #main ul {
