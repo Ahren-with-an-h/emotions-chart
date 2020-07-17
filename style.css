@@ -3,6 +3,10 @@ body {
   color: lightgrey;
 }
 
+h1 {
+  text-align: center;
+}
+
 #main {
   display: flex;
 }
