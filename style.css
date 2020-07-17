@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+  color: lightgrey;
+}
+
+#main {
+  display: flex;
+}
+
+#main h2 {
+  text-align: center;
+}
+
+#main ul {
+  list-style-type: none;
+}
