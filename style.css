@@ -3,22 +3,29 @@ body {
   color: lightgrey;
 }
 
-h1 {
+.title {
   text-align: center;
-  /* font-size: 2em; */
+  margin: 0px;
+  font-size: 4em;
+  font-family: "Cinzel", serif;
+  font-weight: normal;
 }
 
 #main {
   display: flex;
   justify-content: space-around;
-  margin: 0px 20px;
+  margin: 0px 5px;
 }
 
-#main h2 {
+.subheader {
   text-align: center;
-
+  margin: 2px;
+  font-family: "Quintessential", cursive;
+  font-size: 2em;
+  font-weight: normal;
 }
 
 #main ul {
   list-style-type: none;
+  margin: 8px;
 }
