@@ -4,6 +4,7 @@ import { chart } from "./chart.js";
 function buildHTML() {
   // Construct HTML elements
   const main = document.getElementById("main");
+
   // For each key in object create a div with a head and a list
   for (const [key, value] of Object.entries(chart)) {
     // Create elements
@@ -11,8 +12,9 @@ function buildHTML() {
     let head = document.createElement("h2");
     head.classList.add("subheader");
     let ul = document.createElement("ul");
+    ul.classList.add("list");
 
-    // Create header from key
+    // Create header named after key
     head.appendChild(document.createTextNode(key));
 
     // For each item in list create a li and add to the ul
@@ -22,7 +24,7 @@ function buildHTML() {
       ul.appendChild(li);
     }
 
-    // Add the head and the ul to the div
+    // Add the head and the ul to the div and div to the main
     div.appendChild(head);
     div.appendChild(ul);
     main.appendChild(div);
