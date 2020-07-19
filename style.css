@@ -18,9 +18,10 @@ body {
   margin: 0px 5px;
 }
 
-.column {
-  min-width: 180px;
-}
+/* .column {
+  min-width: 5em;
+} */
+
 .subheader {
   text-align: center;
   margin: 2px;
@@ -32,4 +33,5 @@ body {
 .list {
   list-style-type: none;
   margin: 8px;
+  font-size: 1em;
 }
