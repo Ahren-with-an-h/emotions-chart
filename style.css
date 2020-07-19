@@ -18,6 +18,9 @@ body {
   margin: 0px 5px;
 }
 
+.column {
+  min-width: 180px;
+}
 .subheader {
   text-align: center;
   margin: 2px;

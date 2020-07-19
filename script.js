@@ -9,6 +9,7 @@ function buildHTML() {
   for (const [key, value] of Object.entries(chart)) {
     // Create elements
     let div = document.createElement("div");
+    div.classList.add("column");
     let head = document.createElement("h2");
     head.classList.add("subheader");
     let ul = document.createElement("ul");
