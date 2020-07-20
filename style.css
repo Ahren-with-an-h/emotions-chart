@@ -2,6 +2,8 @@ body {
   background-color: black;
   color: lightgrey;
   min-width: 1800px;
+  background-repeat: no-repeat ;
+  background-position: center;
 }
 
 .title {
@@ -34,4 +36,8 @@ body {
   list-style-type: none;
   margin: 8px;
   font-size: 1em;
+}
+
+footer {
+  min-height: 100px;
 }
