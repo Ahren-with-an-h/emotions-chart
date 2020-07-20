@@ -3,17 +3,24 @@
   <head>
     <title>Chart of Emotions</title>
     <!-- start zoomed out on mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body id="body" class="fade-in">
-    <h1 class="title">Emotions</h1>
-    <main id="main"></main>
-    <footer></footer>
+  <body id="body">
+    <div class="parallax no-scroll" id="container">
+      <div class="parallax__layer parallax__layer--back" id="background"></div>
+      <div class="parallax__layer parallax__layer--base" id="base">
+        <h1 class="title">Emotions</h1>
+        <main id="main">
+          <!-- All of the content gets built in here in JS -->
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

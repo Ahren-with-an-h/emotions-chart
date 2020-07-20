@@ -30,22 +30,22 @@ function buildHTML() {
   }
 }
 
-function setBackground() {
+function setBackground(bgLayer) {
   // Get window dimensions
   const width = document.documentElement.offsetWidth;
   const height = document.documentElement.offsetHeight;
+  console.log(`width: ${width}, height: ${height}`)
 
   var randomBackground = new Image();
-  // Wait for image to load then display a filter over it
+  // Wait for image to load then start fade in
   randomBackground.addEventListener("load", () => {
-    document.body.style.background =
-        `linear-gradient( rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88) ), ` + // This makes it dark
-        `url('${randomBackground.src}') ` +
-        `no-repeat center`;
+    bgLayer.style.background = `url('${randomBackground.src}') no-repeat center`;
+    bgLayer.classList.add("fade-in");
   });
   // Get the background
   randomBackground.src = `https://source.unsplash.com/featured/${width}x${height}/?clouds`;
 }
 
+const bgLayer = document.getElementById("background");
 buildHTML();
-setBackground();
+setBackground(bgLayer);
