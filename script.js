@@ -23,7 +23,6 @@ function buildHTML() {
       li.appendChild(document.createTextNode(subItem));
       ul.appendChild(li);
     }
-
     // Add the head and the ul to the div and div to the main
     div.appendChild(head);
     div.appendChild(ul);
@@ -36,16 +35,15 @@ function setBackground() {
   const width = document.documentElement.offsetWidth;
   const height = document.documentElement.offsetHeight;
 
-  function showBackground() {
-    console.log("background loaded");
+  var randomBackground = new Image();
+  // Wait for image to load then display a filter over it
+  randomBackground.addEventListener("load", () => {
     document.body.style.background =
-        `linear-gradient( rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90) ), ` + // This makes it dark
+        `linear-gradient( rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88) ), ` + // This makes it dark
         `url('${randomBackground.src}') ` +
         `no-repeat center`;
-  }
-
-  var randomBackground = new Image();
-  randomBackground.addEventListener("load", showBackground);
+  });
+  // Get the background
   randomBackground.src = `https://source.unsplash.com/featured/${width}x${height}/?clouds`;
 }
 
