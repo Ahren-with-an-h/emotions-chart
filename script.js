@@ -36,20 +36,18 @@ function setBackground() {
   const width = document.documentElement.offsetWidth;
   const height = document.documentElement.offsetHeight;
 
-  var randomBackground = new Image();
-  randomBackground.src = "https://source.unsplash.com/featured/${width}x${height}/?clouds";
-  
-  var int = setInterval(function() {
-    if (randomBackground.complete) {
-        clearInterval(int);
-        document.body.style.background = 
-          `linear-gradient( rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90) ), ` + // This makes it dark
-          `url('https://source.unsplash.com/featured/${width}x${height}/?clouds') ` +
-          `no-repeat fixed center`;
-    }
-  }, 50);
-}
+  function showBackground() {
+    console.log("background loaded");
+    document.body.style.background =
+        `linear-gradient( rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90) ), ` + // This makes it dark
+        `url('${randomBackground.src}') ` +
+        `no-repeat center`;
+  }
 
+  var randomBackground = new Image();
+  randomBackground.addEventListener("load", showBackground);
+  randomBackground.src = `https://source.unsplash.com/featured/${width}x${height}/?clouds`;
+}
 
 buildHTML();
 setBackground();
