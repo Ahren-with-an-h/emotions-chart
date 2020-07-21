@@ -2,14 +2,14 @@ body {
   background-color: black;
   color: lightgrey;
   min-width: 1800px;
-  background-repeat: no-repeat ;
-  background-position: center;
-  margin: 0;
+  margin: 0px;
 }
 
-/* #background {
-
-} */
+#content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 5px;
+}
 
 .title {
   text-align: center;
@@ -19,15 +19,7 @@ body {
   font-weight: normal;
 }
 
-#main {
-  display: flex;
-  justify-content: space-around;
-  margin: 0px 5px;
-}
-
-/* .column {
-
-} */
+/* .column {} */
 
 .subheader {
   text-align: center;
@@ -47,25 +39,28 @@ footer {
   min-height: 5em;
 }
 
-/* Background parallax effect */
-.parallax {
+/* Parallax effect */
+.parallax-container {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
-.parallax__layer {
+
+.parallax-layer {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
-.parallax__layer--base {
-  transform: translateZ(0);
+
+.parallax-background {
+  transform: translateZ(-2px) scale(3);
 }
-.parallax__layer--back {
-  transform: translateZ(-5px) scale(6);
+
+.parallax-foreground {
+  transform: translateZ(0);
 }
 
 /* Background fade in effect */

@@ -10,16 +10,17 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body id="body">
-    <div class="parallax no-scroll" id="container">
-      <div class="parallax__layer parallax__layer--back" id="background"></div>
-      <div class="parallax__layer parallax__layer--base" id="base">
+    <main class="parallax-container">
+      <section class="parallax-layer parallax-background" id="background">
+      </section>
+      <section class="parallax-layer parallax-foreground" id="foreground">
         <h1 class="title">Emotions</h1>
-        <main id="main">
+          <div id="content">
           <!-- All of the content gets built in here in JS -->
-        </main>
+          </div>
         <footer></footer>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <script type="text/javascript" src="script.js"></script>
   </body>
