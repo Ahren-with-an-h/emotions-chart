@@ -53,10 +53,12 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
+  height: 200vh;
 }
 
 .parallax-background {
   transform: translateZ(-2px) scale(3);
+  background-size: 100%;
 }
 
 .parallax-foreground {
@@ -65,50 +67,50 @@ footer {
 
 /* Background fade in effect */
 .fade-in {
-  animation:         fadeIn ease 10s forwards;
+  animation: fadeIn ease 10s forwards;
   -webkit-animation: fadeIn ease 10s forwards;
-  -moz-animation:    fadeIn ease 10s forwards;
-  -o-animation:      fadeIn ease 10s forwards;
-  -ms-animation:     fadeIn ease 10s forwards;
+  -moz-animation: fadeIn ease 10s forwards;
+  -o-animation: fadeIn ease 10s forwards;
+  -ms-animation: fadeIn ease 10s forwards;
 }
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:0.16;
+    opacity: 0.16;
   }
 }
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:0.16;
+    opacity: 0.16;
   }
 }
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:0.16;
+    opacity: 0.16;
   }
 }
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:0.16;
+    opacity: 0.16;
   }
 }
 @-ms-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:0.16;
+    opacity: 0.16;
   }
 }
 
@@ -119,6 +121,6 @@ footer {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
