@@ -59,6 +59,7 @@ footer {
 .parallax-background {
   transform: translateZ(-2px) scale(3);
   background-size: 100%;
+  width: 100%;
 }
 
 .parallax-foreground {

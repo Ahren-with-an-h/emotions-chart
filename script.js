@@ -1,8 +1,7 @@
 function setBackground(bgLayer) {
   // Get window dimensions
-  const width = document.documentElement.offsetWidth;
-  const height = document.documentElement.offsetHeight;
-  console.log(`width: ${width}, height: ${height}`)
+  const width = document.getElementById("content").scrollWidth;
+  const height = document.getElementById("title").scrollHeight + document.getElementById("content").scrollHeight
 
   var randomBackground = new Image();
   // Wait for image to load then start fade in
@@ -11,7 +10,7 @@ function setBackground(bgLayer) {
     bgLayer.classList.add("fade-in");
   });
   // Get the background
-  randomBackground.src = `https://source.unsplash.com/featured/${width}x${height*1.5}/?clouds`;
+  randomBackground.src = `https://source.unsplash.com/featured/${width}x${height}/?clouds`;
 }
 
 const bgLayer = document.getElementById("background");
